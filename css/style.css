@@ -12,6 +12,8 @@ header {
     display: inline;
 } */
 
+
+
 body
 {
     font-family: 'Georgia','Roboto';
@@ -96,11 +98,16 @@ background-color: grey;
     grid-row-start: 1;
     grid-row-end: 3;
 } */
-.skip{
-    background-color: #FAFAFA;
+.skip {
     position: absolute;
-    top: -100px;
-}
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+
 .flex{
     display: flex;
     flex-wrap: wrap;
@@ -166,3 +173,8 @@ background-color: grey;
         grid-column: 3 / auto;
     }
 }
+.skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+  }
